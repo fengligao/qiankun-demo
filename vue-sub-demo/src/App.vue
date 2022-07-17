@@ -1,13 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/vue">Vue</router-link> | 
+      <router-link to="/sub-home">Sub Home</router-link> |
+      <router-link to="/sub-about">Sub About</router-link>
     </div>
-    <router-view />
-    <div id="vue"></div>
-    <div id="react"></div>
+    <router-view/>
   </div>
 </template>
 

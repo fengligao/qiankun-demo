@@ -1,5 +1,5 @@
 {
-  "name": "vue-qiankun",
+  "name": "vue-sub-demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,14 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "qiankun": "^2.7.4",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.12",
     "@vue/cli-plugin-router": "~4.5.12",
     "@vue/cli-plugin-vuex": "~4.5.12",
     "@vue/cli-service": "~4.5.12",

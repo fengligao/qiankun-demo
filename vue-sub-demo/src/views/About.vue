@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>主应用 about page</h1>
+    <h1>子应用 About Page</h1>
   </div>
 </template>
