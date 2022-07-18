@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Vue Sub Home</h1>
+    <h1>子应用的首页</h1>
   </div>
 </template>
 
