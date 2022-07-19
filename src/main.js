@@ -17,6 +17,11 @@ const apps = [{
   entry: 'http://192.168.202.155:8082', //子应用的域名
   container: '#one', //承载子应用的容器，在上面App.vue中定义
   activeRule: '/one', // 被激活的子应用的路由
+}, {
+  name: 'layoutsubvue', //子应用的名称
+  entry: 'http://192.168.202.155:8083', //子应用的域名
+  container: '#layoutsubvue', //承载子应用的容器，在上面App.vue中定义
+  activeRule: '/lay-vue', // 被激活的子应用的路由
 }]
 
 registerMicroApps(apps); //注册子应用
