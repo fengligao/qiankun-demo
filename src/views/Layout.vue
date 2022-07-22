@@ -2,7 +2,7 @@
   <div class="box">
     <div class="left">
       <ul>
-        <li v-for="(v, i) in list" :key="i" @click="$router.push(v.path)">
+        <li v-for="(v, i) in list" :key="i" @click="changeRoute(v)">
           Layout {{ v.name }} {{ i + 1 }}
         </li>
       </ul>
@@ -16,6 +16,7 @@
 <script>
 export default {
   data() {
+    console.log(location);
     return {
       list: [{
         path: '/layout/home',
@@ -28,8 +29,15 @@ export default {
         name: 'About'
       }, {
         path: '/lay-vue/sub-home',
-        name: 'Sub Home'
+        name: 'Sub Home',
+        query: true
       }]
+    }
+  },
+  methods: {
+    changeRoute(v) {
+      let path = v.query ? v.path + '?backUrl=' + location.pathname : v.path
+      this.$router.push(path)
     }
   },
 }

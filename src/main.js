@@ -29,6 +29,15 @@ start(); //启动qiankun
 
 Vue.config.productionTip = false
 
+router.beforeEach((to, from, next) => {
+  console.log('主应用 router each', to);
+  if (!localStorage.getItem('token') && to.path !== '/login') {
+    next('/login')
+  } else {
+    next()
+  }
+})
+
 new Vue({
   router,
   store,
